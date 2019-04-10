@@ -1,8 +1,13 @@
 
 import numpy as np
 import cv2
- 
-im = cv2.imread('logoonly_squarefit_blackfg_whitebg.png')
+
+argv = sys.argv[1:]
+source_file = argv[0]
+dest_file = argv[1]
+
+im = cv2.imread(source_file)
 im[np.where((im == [0,0,0]).all(axis = 2))] = [211,211,211]
-cv2.imwrite('logoonly_squarefit_lightgrayfg_whitebg.png', im)
+cv2.imwrite(dest_file, im)
+
 
