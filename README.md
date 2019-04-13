@@ -7,4 +7,6 @@
 * `python invert.py full/path/to/SOURCE_FILE full/path/to/DESTINATION_FILE`
 * `python white_to_black.py full/path/to/SOURCE_FILE full/path/to/DESTINATION_FILE`
 * `python white_to_transparent.py full/path/to/SOURCE_FILE full/path/to/DESTINATION_FILE`
+* `python watermark.py input_images output_images logos/full_squarefit_brown_transparent.png bottomright`
+
 
